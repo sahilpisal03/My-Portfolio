@@ -32,15 +32,14 @@ It showcases my projects, skills, and contact details in a modern and responsive
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshot
 
-Example:  
 ![Portfolio Screenshot](./assests/Screenshot.png)
 
 ---
 
 ## 🌍 Live Demo
 
-🚀 [View My Portfolio]()
+🚀 [View My Portfolio](https://sahilpisal03.github.io/My-Portfolio/)
 
 ---
