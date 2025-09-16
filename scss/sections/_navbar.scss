@@ -1,0 +1,50 @@
+@use "../custom" as *;
+
+.menu {
+  background-color: #000033;
+
+  .navbar-brand {
+    .brand-name {
+      color: white;
+      font-size: 2rem;
+      font-weight: 300;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+
+  .nav-link {
+    color: white !important;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &.active {
+      color: #ffffff !important;
+    }
+  }
+
+  .btn-rounded {
+    padding: 0.5rem 1.25rem;
+    border-radius: 50rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+    i {
+      color: #ffffff;
+    }
+
+    &:hover {
+      background-color: #ffffff;
+      color: white;
+    }
+  }
+}
+
+// Optional: Smooth navbar collapse fade
+.navbar-collapse {
+  overflow: hidden;
+  transition: height 1s ease-in-out;
+}

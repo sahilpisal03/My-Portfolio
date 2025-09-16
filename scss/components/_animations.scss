@@ -1,0 +1,164 @@
+@use "../custom" as *;
+
+// PULSE BUTTON ANIMATION
+
+@keyframes pulsebtn {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+// COFFEE STEAM ANIMATION IN INTRO IMAGE
+
+.mug-illustration-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Base steam style */
+.steam {
+  position: absolute;
+  width: 2px;
+  height: 2rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255);
+  filter: blur(2px);
+  animation: rise 2s ease-in-out infinite;
+  opacity: 0;
+}
+
+/* Position steam above the mug (adjust these values!) */
+.steam1 {
+  top: 60%;
+  left: 22%;
+  animation-delay: 0s;
+}
+.steam2 {
+  top: 60%;
+  left: 24%;
+  animation-delay: 0.6s;
+}
+.steam3 {
+  top: 60%;
+  left: 26%;
+  animation-delay: 0.3s;
+}
+
+/* Steam animation */
+@keyframes rise {
+  0% {
+    transform: translateY(10px) scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-40px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+// ABOUT SECTION DOODLES ANIMATION
+
+.doodle-container {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.doodle-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.circle {
+  position: absolute;
+  background-color: #d122e3;
+  border-radius: 50%;
+  opacity: 0.25;
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Fade in-out effect */
+.fade {
+  animation: floatFade 6s ease-in-out infinite;
+}
+
+/* Sizes & positions */
+.circle.xsmall {
+  width: 10px;
+  height: 10px;
+  top: 90px;
+  left: 55px;
+  animation-delay: 0s;
+}
+
+.circle.small {
+  width: 20px;
+  height: 20px;
+  bottom: -15px;
+  left: 275px;
+  animation-delay: 1s;
+}
+
+.circle.medium {
+  width: 30px;
+  height: 30px;
+  top: 50px;
+  right: 260px;
+  animation-delay: 2s;
+}
+
+.circle.large {
+  width: 40px;
+  height: 40px;
+  bottom: -5px;
+  right: 10px;
+  animation-delay: 1s;
+}
+
+/* Float only (basic movement) */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Float + Fade (for some circles) */
+@keyframes floatFade {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateY(-8px);
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+}

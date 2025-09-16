@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assests/css/style.css" />
+  <link rel="icon" type="image/png" href="./images/favicon.ico" />
+  <link rel="stylesheet" href="./assests/css/fontawesome.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+</head>
+
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- NAVBAR SECTION -->
+  <nav class="navbar navbar-expand-xl menu navbar-dark fixed-top shadow-sm">
+    <div class="container">
+      <!-- Logo + Brand Name -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="./images/logo.png" alt="logo" width="50" height="50" loading="lazy" />
+        <span class="brand-name">Sahil.Pisal</span>
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <ul class="navbar-nav align-items-center gap-lg-2 mx-4">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Call Button -->
+        <button type="button" class="btn btn-outline-light btn-rounded ms-lg-3">
+          +91 8830869685 <i class="fas fa-phone-alt ms-2"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- INTRO SECTION -->
+  <section id="home" class="intro-section" style="background-image: url(images/background-image.jpg);">
+    <div class="container">
+      <div class="row align-items-center text-white">
+        <!-- LEFT SIDE CONTENT -->
+        <div class="col-md-6 intros">
+          <h1 class="display-2">
+            <span class="display-2--intro text-center">Hey! I'm Sahil</span>
+            <h4 class="display-2--description text-center">
+              Code. Create. Connect.
+            </h4>
+          </h1>
+          <button type="button" class="rounded-pill btn-rounded-intro" id="contactBtn">
+            Get in Touch<span><i class="fas fa-arrow-left"></i></span>
+          </button>
+        </div>
+        <!-- RIGHT SIDE CONTENT -->
+        <div class="col-md-6 intros text-end container">
+          <div class="video-box">
+            <img src="./images/Arts/intro-icon.png" loading="lazy" alt="video-illustration" class="img-fluid" />
+            <div class="steam steam1"></div>
+            <div class="steam steam2"></div>
+            <div class="steam steam3"></div>
+            <a href="./videos/PortfolioVideo1.mp4"
+              class="glightbox position-absolute top-50 bottom-50 start-50 translate-middle" data-type="video"
+              data-width="900"><span><i class="fas fa-play-circle"></i></span><span
+                class="button-animation button-animation--border-1"></span><span
+                class="button-animation button-animation--border-2"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- WAVY PART -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg1">
+      <defs>
+        <filter id="waveShadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="-4" stdDeviation="6" flood-color="rgba(0, 0, 0, 0.25)" />
+        </filter>
+      </defs>
+
+      <path fill="#ffffff" fill-opacity="1" filter="url(#waveShadow)"
+        d="M0,256L40,256C80,256,160,256,240,224C320,192,400,128,480,90.7C560,53,640,43,720,69.3C800,96,880,160,960,165.3C1040,171,1120,117,1200,106.7C1280,96,1360,128,1400,144L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z" />
+    </svg>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about mb-2 container" id="about">
+    <div class="container">
+      <div class="row text-center container about-heading">
+        <h4 class="fw-bold lead mb-3 fs-2 text-center">About Me</h4>
+        <div class="headingLine mb-4"></div>
+      </div>
+      <section id="about" class="container about-container py-5">
+        <div class="row align-items-center container">
+          <!-- Image section -->
+          <div class="col-lg-4 text-center mb-4 mb-lg-0 about-image px-3 px-sm-2 px-md-1">
+            <div class="doodle-container position-relative d-inline-block">
+              <div class="doodle-background">
+                <span class="circle xsmall"></span>
+                <span class="circle small fade"></span>
+                <span class="circle medium fade"></span>
+                <span class="circle large"></span>
+              </div>
+              <img src="images/Profile.jpeg" alt="Sahil Pisal" loading="lazy"
+                class="img-fluid rounded-circle about-img position-relative" style="max-width: 350px" />
+            </div>
+          </div>
+
+          <!-- Text content -->
+          <div class="col-lg-8 about-text container">
+            <p>
+              Hi, I'm <strong>Sahil Pisal</strong>, an aspiring AI & ML
+              Engineer with a strong passion for leveraging technology to
+              address real-world challenges. Equipped with practical knowledge in Data Science, Web and Python
+              Development, and Cloud Computing, I am also a certified Microsoft Azure professional.
+            </p>
+
+            <p>
+              I have recently graduated with a Bachelor’s degree in Artificial
+              Intelligence and Machine Learning from Navsahyadri Group of
+              Institutes, College of Engineering. I have a keen interest in
+              developing intelligent, data-driven, and user-centric
+              applications that create meaningful impact.
+            </p>
+            <p>
+              I am committed to continuous learning and enjoy building
+              scalable, efficient solutions that combine innovation with
+              functionality. Beyond coding, I enjoy reading, exploring
+              emerging tech trends, and playing a variety of sports. I’m
+              always eager to grow, take on new challenges, and push my
+              creative and technical boundaries.
+            </p>
+
+            <ul class="list-unstyled mt-3 about-list">
+              <li>
+                <i class="fa-solid fa-graduation-cap" style="color: #9926f0"></i>
+                Recent AI & ML Engineering Graduate
+              </li>
+              <li>
+                <i class="fa-solid fa-certificate" style="color: #9926f0"></i>
+                Microsoft Certified: Azure Fundamentals (AZ-900)
+              </li>
+              <li>
+                <i class="fa-solid fa-gear" style="color: #9926f0"></i>
+                Areas of Interests: Data Science, AI/ML, Web Development, IoT
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot" style="color: #9926f0"></i>
+                Based in Pune, Maharashtra, India
+              </li>
+            </ul>
+
+            <a href="./images/sahilpisalresume.pdf" rel="noopener noreferrer" class="mt-3" target="_blank">
+              <button type="button" class="rounded-pill btn-rounded-about border-primary">
+                Download Resume<span><i class="fas fa-arrow-down"></i></span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- THE SKILLS SECTION -->
+  <section id="skills" class="skills mt-4">
+    <div class="container skill-container">
+      <div class="row text-center" style="margin-left: 0.2rem;">
+        <h4 class="fw-bold lead mb-3 fs-2">My Skills</h4>
+        <div class="headingLine mb-1"></div>
+      </div>
+    </div>
+    <div class="row justify-content-center gx-0 px-2 mt-5">
+      <!-- Repeat this div 19 times for 19 logos -->
+      <div class="col-lg-2 col-md-3 col-sm-6 text-center skills__logo-box">
+        <img src="images/Skills/skill-1.png" loading="lazy" alt="Skill 1" title="HTML5" class="img-fluid"
+          style="max-height: 50px" />
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 text-center skills__logo-box">
+        <img src="images/Skills/skill-2.png" loading="lazy" alt="Skill 2" title="CSS3" class="img-fluid"
+          style="max-height: 50px" />
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 text-center skills__logo-box">
+        <img src="images/Skills/skill-3.png" loading="lazy" alt="Skill 3" title="JavaScript" class="img-fluid"
+          style="max-height: 50px" />
+      </div>
+      <!-- <div class="col-lg-2 col-md-3 col-sm-6 text-center skills__logo-box">
+        <img src="images/Skills/skill-4.png" loading="lazy" alt="Skill 4" title="MongoDB" class="img-fluid"
+          style="max-height: 50px" />
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 text-center skills__logo-box">
+        <img src="images/Skills/skill-5.png" loading="lazy" alt="Skill 5" title="ExpressJS" class="img-fluid"
+          style="max-height: 50px" />
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 text-center skills__logo-box">
+        <img src="images/Skills/skill-6.png" loading="lazy" alt="Skill 6" title="ReactJS" class="img-fluid"
+          style="max-height: 50px" />
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 text-center skills__logo-box">
+        <img src="images/Skills/skill-7.png" loading="lazy" alt="Skill 7" title="NodeJS" class="img-fluid"
+          style="max-height: 50px" />
+      </div> -->
+      <div class="col-lg-2 col-md-3 col-sm-6 text-center skills__logo-box">
+        <img src="images/Skills/skill-8.png" loading="lazy" alt="Skill 8" title="Bootstrap" class="img-fluid"
+          style="max-height: 50px" />
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 text-center skills__logo-box">
+        <img src="images/Skills/skill-9.png" loading="lazy" alt="Skill 9" title="SASS" class="img-fluid"
+          style="max-height: 50px" />
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 text-center skills__logo-box">
+        <img src="images/Skills/skill-10.png" loading="lazy" alt="Skill 10" title="TailwindCSS" class="img-fluid"
+          style="max-height: 50px" />
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 text-center skills__logo-box">
+        <img src="images/Skills/skill-11.png" loading="lazy" alt="Skill 11" title="Python" class="img-fluid"
+          style="max-height: 50px" />
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 text-center skills__logo-box">
+        <img src="images/Skills/skill-12.png" loading="lazy" alt="Skill 12" title="NumPy" class="img-fluid"
+          style="max-height: 50px" />
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 text-center skills__logo-box">
+        <img src="images/Skills/skill-13.png" loading="lazy" alt="Skill 13" title="Pandas" class="img-fluid"
+          style="max-height: 50px" />
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 text-center skills__logo-box">
+        <img src="images/Skills/skill-14.png" loading="lazy" alt="Skill 14" title="Scikit-Learn" class="img-fluid"
+          style="max-height: 50px" />
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 text-center skills__logo-box">
+        <img src="images/Skills/skill-15.png" loading="lazy" alt="Skill 15" title="Tensorflow" class="img-fluid"
+          style="max-height: 50px" />
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 text-center skills__logo-box">
+        <img src="images/Skills/skill-16.png" loading="lazy" alt="Skill 16" title="SQL" class="img-fluid"
+          style="max-height: 50px" />
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 text-center skills__logo-box">
+        <img src="images/Skills/skill-17.png" loading="lazy" alt="Skill 17" title="PowerBI" class="img-fluid"
+          style="max-height: 50px" />
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 text-center skills__logo-box">
+        <img src="images/Skills/skill-18.png" loading="lazy" alt="Skill 18" title="Azure" class="img-fluid"
+          style="max-height: 50px" />
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="row text-center">
+        <h4 class="fw-bold lead mb-3 fs-2 text-center text-capitalize">Projects</h4>
+        <div class="headingLine mb-4"></div>
+        <p class="lead mx-2">Showcasing real-world projects that highlight my skills in AI, Data Science, and Web
+          Development</p>
+      </div>
+      <div class="row text-center mx-auto mt-2 mb-4 g-3">
+        <div class="col-md-12">
+          <button class="btn btn-outline-primary filter-btn" type="button" data-filter="all">All</button>
+          <button class="btn btn-outline-primary filter-btn" type="button" data-filter="data-science">Data
+            Science</button>
+          <button class="btn btn-outline-primary filter-btn" type="button" data-filter="web-dev">Web
+            Development</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 project-item" data-category="data-science all">
+          <div class="project-box mx-2 shadow">
+            <img src="images/Projects/project-1.jpg" loading="lazy" alt="project-1"
+              title="Smart Agriculture Monitoring System" class="img-fluid">
+            <div class="project-info">
+              <div class="project-caption">
+                <h4 class="text-center">Smart Agriculture Monitoring System</h4>
+                <p class="project-desc">For Disease Prediction And Monitoring Farm Environment using IoT, AR and AI</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 project-item" data-category="web-dev all">
+          <div class="project-box mx-2 shadow">
+            <img src="images/Projects/project-2.jpg" loading="lazy" alt="project-2" title="StudySync" class="img-fluid">
+            <div class="project-info">
+              <div class="project-caption">
+                <h4 class="text-center">StudySync</h4>
+                <p class="project-desc">A learning companion website created using HTML and CSS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 project-item" data-category="web-dev all">
+          <div class="project-box mx-2 shadow">
+            <img src="images/Projects/project-3.jpg" loading="lazy" alt="project-3" title="RazorPay Clone"
+              class="img-fluid">
+            <div class="project-info">
+              <div class="project-caption">
+                <h4 class="text-center">RazorPay Clone</h4>
+                <p class="project-desc">Created a clone of RazorPay Website using TailwindCSS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 project-item" data-category="web-dev all">
+          <div class="project-box mx-2 shadow">
+            <img src="images/Projects/project-4.jpg" loading="lazy" alt="project-4" title="MindCanvas"
+              class="img-fluid">
+            <div class="project-info">
+              <div class="project-caption">
+                <h4 class="text-center">MindCanvas</h4>
+                <p class="project-desc">For Bloggers to put the amazing content on canvas (online) using BootStrap</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 project-item" data-category="data-science all">
+          <div class="project-box mx-2 shadow">
+            <img src="images/Projects/project-5.jpg" loading="lazy" alt="project-5" title="E-Commerce Dashboard"
+              class="img-fluid">
+            <div class="project-info">
+              <div class="project-caption">
+                <h4 class="text-center">Supermarket Sales Dashboard</h4>
+                <p class="project-desc">A Supermarket Sales dashboard for better insights and business growth created
+                  using
+                  PowerBI</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 project-item" data-category="data-science all">
+          <div class="project-box mx-2 shadow">
+            <img src="images/Projects/project-6.jpg" loading="lazy" alt="project-6" title="RazorPay Clone"
+              class="img-fluid">
+            <div class="project-info">
+              <div class="project-caption">
+                <h4 class="text-center">Covid-19 Data Exploration</h4>
+                <p class="project-desc">Explored global COVID-19 trends by querying and analyzing real-world datasets
+                  using SQL for insights</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTINOMIALS SECTION -->
+  <section class="testimonials mt-4" style="overflow-x: hidden;">
+    <!-- Full-width Wavy Top SVG -->
+    <!-- Your Bootstrap Container -->
+    <div class="container" id="testimonials">
+      <div class="row" style="margin-left: 0.3rem;">
+        <h4 class="fw-bold lead mb-3 fs-2 text-center">
+          Testimonials
+        </h4>
+        <div class="headingLine mb-1"></div>
+        <p class="pt-3 pb-5 lead text-center test-desc">
+          Reflections from people I’ve worked alongside
+        </p>
+      </div>
+      <!-- Carousel Part -->
+      <div class="row align-items-center mx-auto">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel"
+          data-bs-interval="4000" data-bs-pause="false">
+          <div class="carousel-inner">
+            <!-- Testimonial-1 -->
+            <div class="carousel-item active">
+              <!-- Card -->
+              <div class="testimonials__card shadow">
+                <p class="lh-lg">
+                  <i class="fas fa-quote-left"></i>
+                  Sahil is among the most thoughtful and technically skilled individuals I’ve worked with. In our
+                  final-year project, his deep expertise in AI and ML significantly contributed to the system’s overall
+                  success. His ability to break down complex challenges, communicate solutions clearly, and design with
+                  the end-user in mind makes him an outstanding team member with a results-driven and user-centric
+                  mindset.
+
+
+                  <i class="fas fa-quote-right"></i>
+                <div class="ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                </p>
+              </div>
+              <!-- Picture -->
+              <div class="testimonials__picture">
+                <img src="./images/Testimonials/testimonial-1.png" loading="lazy" alt="Testimonial-1"
+                  class="img-fluid rounded-circle">
+              </div>
+              <!-- Client name & Role -->
+              <div class="testimonials__name">
+                <h3>Vaibhav Patode</h3>
+                <p class="fw-light">Graphic Designer</p>
+              </div>
+            </div>
+            <!-- Testimonial-2 -->
+            <div class="carousel-item">
+              <!-- Card -->
+              <div class="testimonials__card shadow">
+                <p class="lh-lg">
+                  <i class="fas fa-quote-left"></i>
+                  Sahil’s passion for machine learning and his sharp understanding of data intricacies always stood out.
+                  Throughout our academic journey, I witnessed him solving problems with a perfect blend of
+                  clarity and creativity. His project work reflects both strong theoretical foundations and practical
+                  execution skills in AI. He combines insight, precision, and innovation in a way that brings real-world
+                  impact to his work.
+                  <i class="fas fa-quote-right"></i>
+                <div class="ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                </p>
+              </div>
+              <!-- Picture -->
+              <div class="testimonials__picture">
+                <img src="./images/Testimonials/testimonial-2.png" loading="lazy" alt="Testimonial-2"
+                  class="img-fluid rounded-circle">
+              </div>
+              <!-- Client name & Role -->
+              <div class="testimonials__name">
+                <h3>Nishant Kosalge</h3>
+                <p class="fw-light">Data Scientist</p>
+              </div>
+            </div>
+            <!-- Testimonial-3 -->
+            <div class="carousel-item">
+              <!-- Card -->
+              <div class="testimonials__card shadow">
+                <p class="lh-lg">
+                  <i class="fas fa-quote-left"></i>
+                  I’ve worked with Sahil on several tech-focused web projects, and his full-stack development skills are
+                  consistently impressive. He ensures the entire user journey is seamless and intuitive. What makes
+                  Sahil truly unique is his calm, logical approach to problem-solving and his eagerness to take on new
+                  challenges. His ability to adapt and contribute to every stage of development sets him apart in the
+                  tech domain.
+                  <i class="fas fa-quote-right"></i>
+                <div class="ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                </p>
+              </div>
+              <!-- Picture -->
+              <div class="testimonials__picture">
+                <img src="./images/Testimonials/testimonial-3.png" loading="lazy" alt="Testimonial-3"
+                  class="img-fluid rounded-circle">
+              </div>
+              <!-- Client name & Role -->
+              <div class="testimonials__name">
+                <h3>Pratham Patil</h3>
+                <p class="fw-light">Web Developer</p>
+              </div>
+            </div>
+            <!-- Testimonial-4 -->
+            <div class="carousel-item">
+              <!-- Card -->
+              <div class="testimonials__card shadow">
+                <p class="lh-lg">
+                  <i class="fas fa-quote-left"></i>
+                  I’ve had the pleasure of collaborating with Sahil on numerous AI-driven projects. His dedication to
+                  learning, paired with a hands-on approach to problem-solving, is remarkable. From deep data
+                  exploration to designing clean user interfaces, he balances technical depth with teamwork. He
+                  consistently demonstrates a rare mix of creativity, consistency, and clear thinking—traits that make
+                  him an aspiring developer.
+                  <i class="fas fa-quote-right"></i>
+                <div class="ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                </p>
+              </div>
+              <!-- Picture -->
+              <div class="testimonials__picture">
+                <img src="./images/Testimonials/testimonial-4.png" loading="lazy" alt="Testimonial-4"
+                  class="img-fluid rounded-circle">
+              </div>
+              <!-- Client name & Role -->
+              <div class="testimonials__name">
+                <h3>Ganesh Pisal</h3>
+                <p class="fw-light">ML Engineer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Full-width Wavy Bottom SVG -->
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <div class="row faq-heading">
+        <h1 class="fw-bold lead mb-3 mt-4 display-5 text-uppercase text-center faq-head">FAQ?</h1>
+        <div class="headingLine mb-1"></div>
+        <p class="lead pt-3 text-center faq-desc">Answers to frequently asked questions about my education, experience,
+          and expertise</p>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-12">
+          <div class="accordion mx-auto" id="accordionExample" style="max-width: 800px;">
+            <div class="accordion-item mb-3 shadow">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  What is your background in tech?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  I’m a recent graduate in Artificial Intelligence and Machine Learning from Navsahyadri College of
+                  Engineering, under Savitribai Phule Pune University. I have hands-on experience and a growing
+                  proficiency in Python, Data Science, and Web Development.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-3 shadow">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  What kind of projects have you worked on?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  I’ve worked on various AI-driven projects like Smart Agriculture Monitoring using IoT and AI, Fake
+                  News Detection, and Crop Yield Prediction using CNNs. I also have experience building full-stack
+                  applications using HTML, CSS, JavaScript, Bootstrap, and Flask.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-3 shadow">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  What technologies are you currently exploring?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Currently, I’m focusing on expanding my skills in Machine Learning, Big Data Analytics, and Front-End
+                  development using React. I'm also refining my knowledge of cloud platforms like Microsoft Azure.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-3 shadow">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Do you have any certifications?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Yes, I’m Microsoft Azure Fundamentals (AZ-900) certified and have also completed NPTEL’s Python for
+                  Data Science course. These certifications reflect my commitment to continuous learning and industry
+                  readiness.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-3 shadow">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  What makes you different as a developer?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  I blend technical skills with a creative mindset and always keep the end-user in mind. My adaptability
+                  and openness to feedback make me an effective and collaborative team member.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-3 shadow">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  What are your hobbies outside of tech?
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Outside of coding, I enjoy reading, playing sports, and exploring new technologies. These hobbies help
+                  me maintain a balanced and curious mindset.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-3 shadow">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  Are you open to collaborations or freelance work?
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Absolutely! I’m always open to collaborative opportunities, internships, or freelance work in web
+                  development, data science, or machine learning.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <div class="container row">
+      <h4 class="fw-bold lead mb-3 fs-2 text-center">
+        Contact Me
+      </h4>
+      <div class="headingLine mb-1"></div>
+      <p class="pt-3 pb-5 lead text-center test-desc">
+        Let’s connect — I’m open to collaboration, opportunities, or just a friendly chat
+      </p>
+      <div class="row text-center contact-container">
+        <div class="col-lg-6 col-12 shadow p-3 d-none d-lg-block" style="background-image: url(images/contact/contact-3.jpg);background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;">
+        </div>
+        <div class="col-lg-6 col-12 bg-white shadow p-3">
+          <div class="form pb-2 w-100">
+            <div class="display-3--title fs-2 mb-5">Just Connect.</div>
+            <form action="https://formspree.io/f/xqabnbdg" name="contact" method="POST" id="contact-form" class="row"
+              style="max-width: max-content;">
+
+              <!-- Actual form fields -->
+              <div class="col-lg-6 col-md-6 mb-3">
+                <input type="text" name="Fname" placeholder="First Name" class="form-control-lg shadow form-control"
+                  required />
+              </div>
+
+              <div class="col-lg-6 col-md-6 mb-3">
+                <input type="text" name="Lname" placeholder="Last Name" class="form-control-lg shadow form-control"
+                  required />
+              </div>
+
+              <div class="col-lg-12 mb-3">
+                <input type="email" name="Email" placeholder="Email Address" class="form-control-lg shadow form-control"
+                  required />
+              </div>
+
+              <div class="col-lg-12 mb-3">
+                <textarea name="Message" rows="8" placeholder="Share your thoughts..."
+                  class="form-control-lg shadow form-control" required></textarea>
+              </div>
+
+              <div class="text-center mt-1 d-grid">
+                <button type="submit" class="btn btn-primary rounded-pill pt-3 pb-3">
+                  Submit <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+
+            <p id="form-status" class="text-success text-center mt-3 fw-bold" style="display: none;"></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="text-white pt-5 pb-3" style="background-color: #141515;">
+    <div class="container mx-auto">
+      <div class="row text-center text-md-start mx-auto" style="display: flex; justify-content: space-evenly;">
+
+        <!-- Brand & Description -->
+        <div class="col-md-4 mb-4" style="display: flex; flex-direction: column; align-items: center;">
+          <img src="./images/logo.png" alt="logo-image" width="50px" class="50px" loading="lazy">
+          <h5 class="fw-bold mt-1">Sahil.Pisal</h5>
+          <p class="text-white small">Code. Create. Connect.</p>
+          <p class="text-gray small text-center mt-2" style="max-width: 200px; opacity: 60%;">
+            "Passionate AI Engineer crafting solutions through code and creativity"
+          </p>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-4 mb-5" style="display: flex; flex-direction: column; align-items: center;">
+          <h6 class="text-uppercase fw-bold mb-3" style="color: #9926f0;">Contact</h6>
+          <p class="mb-2"><i class="fas fa-phone me-2"></i> +91 - 1234567890</p>
+          <p class="mb-2"><i class="fas fa-envelope me-2"></i> <a class="email-text text-white text-decoration-none"
+              href="mailto:sahilpisal0310@gmail.com">sahilpisal0310@gmail.com</a>
+          </p>
+          <p><i class="fas fa-map-marker-alt me-2"></i> Pune, Maharashtra, INDIA</p>
+
+          <h6 class="text-uppercase fw-bold mt-4 mb-3" style="color: #9926f0;">Social Media Links</h6>
+          <div class="d-flex justify-content-md-start justify-content-center gap-4">
+            <a href="https://www.linkedin.com/in/sahil-pisal" target="_blank" class="text-white">
+              <i class="fab fa-linkedin-in fa-lg"></i>
+            </a>
+            <a href="" target="_blank" class="text-white">
+              <i class="fab fa-x-twitter fa-lg"></i>
+            </a>
+            <a href="https://github.com/sahilpisal03" target="_blank" class="text-white">
+              <i class="fab fa-github fa-lg"></i>
+            </a>
+            <a href="" target="_blank" class="text-white">
+              <i class="fab fa-facebook fa-lg"></i>
+            </a>
+            <a href="" target="_blank" class="text-white">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-4">
+          <h6 class="text-uppercase fw-bold mb-3"
+            style="color: #9926f0; display: flex; flex-direction: column; align-items: center;">Quick Links</h6>
+          <ul class="list-unstyled" style="display: flex; flex-direction: column; align-items: center;">
+            <li><a href="#home" class="text-white text-decoration-none d-block mb-2">Home</a></li>
+            <li><a href="#about" class="text-white text-decoration-none d-block mb-2">About</a></li>
+            <li><a href="#skills" class="text-white text-decoration-none d-block mb-2">Skills</a></li>
+            <li><a href="#experience" class="text-white text-decoration-none d-block mb-2">Projects</a></li>
+            <li><a href="#testimonials" class="text-white text-decoration-none d-block mb-2">Testimonials</a></li>
+            <li><a href="#faq" class="text-white text-decoration-none d-block mb-2">FAQ</a></li>
+            <!-- <li><a href="#blogs" class="text-white text-decoration-none d-block mb-2">Blogs</a></li> -->
+            <li><a href="news.html" class="text-white text-decoration-none d-block mb-2">News</a></li>
+            <!-- <li><a href="./images/sahilpisalresume.pdf" rel="noopener noreferrer" target="_blank"
+                class="text-white text-decoration-none d-block mb-2">Download Resume</a></li>
+            <li><a href="#contact" class="text-white text-decoration-none d-block">Get in Touch</a></li> -->
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <hr class="bg-white">
+      <div class="text-center text-white small">
+        Sahil.Pisal © 2025 - All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- LINKING THE PRELOADER -->
+  <script>
+    window.addEventListener("load", () => {
+      const preloader = document.getElementById("preloader");
+      preloader.style.opacity = "0";
+      preloader.style.visibility = "hidden";
+      setTimeout(() => {
+        preloader.style.display = "none";
+      }, 500);
+    });
+    document.body.classList.add("loading");
+    window.addEventListener("load", () => {
+      document.body.classList.remove("loading");
+    });
+  </script>
+
+  <!-- BACK TO TOP BUTTON -->
+  <a href="#home" class="shadow btn-primary rounded-circle"
+    style="background-color: #9926f0; position: fixed; width: 3rem; height: 3rem; right: 1.875rem; bottom: 1.875rem; z-index: 9999;"><i
+      class="fas fa-chevron-up"
+      style="color: white; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></i></a>
+
+  <!-- LINKING THE GLIGHTBOX -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+  <!-- LINKING THE VIDEO IN INTRO WITH GLIGHTBOX -->
+  <script type="text/javascript">
+    const lightbox = GLightbox({
+      selector: ".glightbox",
+    });
+  </script>
+
+  <!-- NAVIGATING THE CONTACT SECTION WITH GET IN TOUCH BUTTON -->
+  <script>
+    document.getElementById('contactBtn').addEventListener('click', function () {
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+
+  <!-- FILTERING OUT PROJECTS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const projectItems = document.querySelectorAll('.project-item');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const filterValue = button.getAttribute('data-filter');
+
+          projectItems.forEach(item => {
+            const categories = item.getAttribute('data-category');
+
+            // Show all or match any word
+            if (filterValue === 'all' || categories.includes(filterValue)) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+
+  <!-- FORM ALERT -->
+  <script>
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          headers: { "Accept": "application/json" },
+          body: formData
+        });
+
+        if (response.ok) {
+          form.reset();
+          status.style.display = "block";
+          status.style.color = "green";
+          status.textContent = "Sent Successfully!";
+        } else {
+          const data = await response.json();
+          status.style.display = "block";
+          status.style.color = "red";
+          status.textContent =
+            data.errors?.[0]?.message || "Something went wrong. Please try again.";
+        }
+      } catch (error) {
+        status.style.display = "block";
+        status.style.color = "red";
+        status.textContent = "Error: Unable to send message.";
+      }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+@use "../custom" as *;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.news-section {
+  padding-left: 1.5rem;
+  padding-top: 4rem;
+  background-color: #ffffff;
+
+  .btn-outline-primary {
+    color: $primary;
+    border-color: $primary;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $primary;
+      border-color: $primary;
+      color: #fff;
+    }
+  }
+
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .card {
+    border: 0.3px solid rgb(180, 180, 180);
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ffffff;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .card-body {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .card-title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .card-text {
+        font-size: 0.9rem;
+        color: #646464;
+        flex-grow: 1;
+      }
+
+      .btn {
+        margin-top: 1rem;
+        align-self: flex-start;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.news-marquee-wrapper {
+  background-image: url(/images/background-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.ticker {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ticker .title {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #f02626;
+  padding: 0.4rem 1rem;
+  flex-shrink: 0;
+}
+
+.ticker .news {
+  flex-grow: 1;
+  overflow: hidden;
+
+  marquee {
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.news-intros {
+  margin-top: -110px;
+}
+
+.intro-section {
+  // @include gradient;
+  background-image: url(images/background-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 10rem 0 0 0;
+  width: 100%;
+  height: 100%;
+}

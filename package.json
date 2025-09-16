@@ -1,0 +1,29 @@
+{
+  "name": "portfolio-using-bootstrap-and-sass",
+  "version": "1.0.0",
+  "description": "My Portfolio Website",
+  "keywords": [
+    "MyPortfolio",
+    "Portfolio",
+    "Website",
+    "Bootstrap",
+    "SASS"
+  ],
+  "license": "ISC",
+  "author": "Sahil Pisal",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assests/css"
+  },
+  "devDependencies": {
+    "sass": "^1.89.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "autoprefixer": "^10.4.21",
+    "bootstrap": "^5.3.6",
+    "node-fetch": "^3.3.2",
+    "postcss-cli": "^11.0.1"
+  }
+}

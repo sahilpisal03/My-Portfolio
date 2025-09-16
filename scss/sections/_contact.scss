@@ -1,0 +1,27 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.contact {
+  padding-left: 15px;
+  padding: 4rem 0;
+  background-color: $gray-200;
+}
+
+.contact-container {
+  margin-left: 10px;
+}
+
+.form {
+  padding: 3rem;
+
+  button {
+    border: none;
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+  }
+}

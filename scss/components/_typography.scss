@@ -1,0 +1,107 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+// * {
+//   outline: 1px solid red;
+// }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// FOR REMOVING HORIZONTAL SCROLL ACROSS THE WEBSITE
+html,
+body {
+  background-color: white;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+.container,
+.row {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+// LEFT SIDE HEADINGS AND SUB-HEADINGS OF INTRO-SECTION
+.display-2 {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+
+  &--intro {
+    display: block;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+  }
+
+  &--description {
+    // display: block;
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    text-transform: none;
+    opacity: 90%;
+    margin: 0 auto;
+  }
+}
+
+// WAVY PART
+
+.svg1 {
+  margin-bottom: -10px;
+}
+
+// LINE UNDER SKILL SECTION HEADING
+.headingLine::before {
+  content: "";
+  background-color: $primary;
+  width: 10rem;
+  height: 0.11rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.headingLine::after {
+  content: "";
+  background-color: $primary;
+  padding-top: 0.5rem;
+  margin-bottom: 2rem;
+  width: 2rem;
+  height: 0.3rem;
+  display: block;
+  margin: 0 auto;
+}
+
+// SKILLS SUB-HEADING
+.sub-head {
+  color: gray;
+}
+
+// CONTACT SIDE IMAGE
+.contact-image {
+  background-image: url(/images/contact/contact-3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 698.93px;
+}
+
+.display-3 {
+  font-family: "Poppins", sans-serif;
+
+  &--title {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    background-image: linear-gradient(to right, $primary, $secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

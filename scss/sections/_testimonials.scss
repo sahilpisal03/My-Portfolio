@@ -1,0 +1,88 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+section.testimonials {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.testimonials {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  margin-top: -10px;
+  overflow: hidden;
+
+  &__card {
+    background-color: rgba(255, 215, 253, 0.5);
+    padding: 2rem 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    height: auto;
+    text-align: center;
+    i {
+      font-size: 1.5rem;
+      color: rgba($color: black, $alpha: 0.7);
+    }
+    .ratings {
+      i {
+        color: rgba($color: rgb(255, 242, 0), $alpha: 0.7);
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__picture {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    img {
+      outline: 0.125rem solid rgba($color: #bb6ef5, $alpha: 1);
+    }
+  }
+
+  &__name {
+    padding-top: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 500;
+
+    h3 {
+      padding-top: 0.8rem;
+      text-transform: capitalize;
+    }
+
+    p {
+      padding-bottom: 2rem;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.test-desc {
+  color: black;
+  opacity: 80%;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-item {
+  transition: opacity 1s ease-in-out;
+  background: transparent !important;
+}
+
+.carousel-item.active {
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+}

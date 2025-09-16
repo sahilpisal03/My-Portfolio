@@ -1,0 +1,25 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.footer {
+  font-family: "Poppins", sans-serif;
+  padding-top: 2rem;
+}
+
+.email-text {
+  font-size: 1rem; /* Default size for large screens */
+}
+
+@media (max-width: 991.98px) {
+  /* Medium and smaller (Bootstrap 'md' breakpoint) */
+  .email-text {
+    font-size: 0.85rem; /* Reduced for medium */
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* Small and below */
+  .email-text {
+    font-size: 0.75rem; /* Reduced further for small screens */
+  }
+}

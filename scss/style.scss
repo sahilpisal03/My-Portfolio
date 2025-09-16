@@ -1,0 +1,22 @@
+@use "custom";
+
+// IMPORTING THE COMPONENTS
+
+@use "components/animations";
+@use "components/buttons";
+@use "components/mixins";
+@use "components/typography";
+@use "./components/news";
+
+// IMPORTING THE SECTIONS
+
+@use "sections/skills";
+@use "sections/faq";
+@use "sections/footer";
+@use "sections/contact";
+@use "sections/intro-section";
+@use "sections/navbar";
+@use "sections/experience";
+@use "sections/about";
+@use "sections/testimonials";
+@use "./sections/preloader";

@@ -1,0 +1,37 @@
+@use "../custom" as *;
+
+#about {
+  display: flex;
+  justify-content: center;
+}
+
+.about-heading {
+  display: flex;
+  justify-content: center;
+  margin-left: 0.3rem;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  transform: translateY(-42px);
+  transition: transform 0.3s ease;
+}
+
+.about-text {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  overflow: visible;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

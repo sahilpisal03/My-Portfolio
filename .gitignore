@@ -1,0 +1,13 @@
+# Local Netlify folder
+.netlify
+.vscode/
+node_modules/
+Profile.jpeg
+logo.png
+videos/
+theming-kit.html
+Testimonials/
+Skills/
+Projects/
+contact/
+images/
